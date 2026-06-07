@@ -1,0 +1,21 @@
+[project]
+name = "images-library"
+version = "0.1.0"
+description = "Images Library as tree folder"
+authors = [
+    {name = "Joan Sarola",email = "jsarola@proton.me"}
+]
+license = "AGPL"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "Pillow>=11.0",
+    "python-dotenv>=1.0",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
