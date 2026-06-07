@@ -79,7 +79,7 @@ def organise():
     src = Path(FOLDER_ORIG)
     dst = Path(FOLDER_DEST)
 
-    images = [p for p in src.iterdir() if p.is_file() and p.suffix.lower() in IMAGE_EXTENSIONS]
+    images = [p for p in src.rglob("*") if p.is_file() and p.suffix.lower() in IMAGE_EXTENSIONS]
     print(f"Found {len(images)} image(s) in {src}")
 
     for img_path in images:
